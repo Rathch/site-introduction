@@ -10,7 +10,7 @@ require 'recipe/typo3.php';
 set('repository', 'git@github.com:Rathch/site-introduction.git');
 
 add('shared_files', []);
-add('shared_dirs', []);
+add('shared_dirs', ['config', 'fileadmin', 'typo3temp', 'uploads', 'var']);
 add('writable_dirs', []);
 
 // Hosts
