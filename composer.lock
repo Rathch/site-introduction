@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "661d31fdf7fd5c8ef65093f1b54306bf",
+    "content-hash": "9e8f3d77c6cf8ca856a6e8014fd76e47",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -168,6 +168,60 @@
                 "source": "https://github.com/DASPRiD/Enum/tree/1.0.6"
             },
             "time": "2024-08-09T14:30:48+00:00"
+        },
+        {
+            "name": "deployer/deployer",
+            "version": "v7.5.12",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/deployphp/deployer.git",
+                "reference": "efc71dac9ccc86b3f9946e75d50cb106b775aae2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/deployphp/deployer/zipball/efc71dac9ccc86b3f9946e75d50cb106b775aae2",
+                "reference": "efc71dac9ccc86b3f9946e75d50cb106b775aae2",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": "^8.0|^7.3"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.64",
+                "pestphp/pest": "^3.3",
+                "phpstan/phpstan": "^1.4",
+                "phpunit/php-code-coverage": "^11.0",
+                "phpunit/phpunit": "^11.4"
+            },
+            "bin": [
+                "bin/dep"
+            ],
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Anton Medvedev",
+                    "email": "anton@medv.io"
+                }
+            ],
+            "description": "Deployment Tool",
+            "homepage": "https://deployer.org",
+            "support": {
+                "docs": "https://deployer.org/docs",
+                "issues": "https://github.com/deployphp/deployer/issues",
+                "source": "https://github.com/deployphp/deployer"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sponsors/antonmedv",
+                    "type": "github"
+                }
+            ],
+            "time": "2025-02-19T16:45:27+00:00"
         },
         {
             "name": "doctrine/annotations",
@@ -1348,45 +1402,6 @@
             "time": "2024-03-31T07:05:07+00:00"
         },
         {
-            "name": "my-vendor/my-site-package",
-            "version": "dev-task/docker",
-            "dist": {
-                "type": "path",
-                "url": "packages/my_site_package",
-                "reference": "f705f005d20c94e7309761ca69d9483a144e6d5b"
-            },
-            "require": {
-                "typo3/cms-core": "^13.4",
-                "typo3/cms-fluid-styled-content": "^13.4",
-                "typo3/cms-rte-ckeditor": "^13.4"
-            },
-            "suggest": {
-                "friendsoftypo3/content-blocks": "Allows to create custom content elements. "
-            },
-            "type": "typo3-cms-extension",
-            "extra": {
-                "typo3/cms": {
-                    "extension-key": "my_site_package"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "MyVendor\\MySitePackage\\": "Classes/"
-                }
-            },
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "description": "Site package to follow the tutorial.",
-            "homepage": "https://docs.typo3.org/permalink/t3sitepackage:start",
-            "keywords": [
-                "TYPO3 CMS"
-            ],
-            "transport-options": {
-                "relative": true
-            }
-        },
-        {
             "name": "nikic/php-parser",
             "version": "v5.5.0",
             "source": {
@@ -2234,6 +2249,450 @@
             "time": "2019-03-08T08:55:37+00:00"
         },
         {
+            "name": "sourcebroker/deployer-extended",
+            "version": "24.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sourcebroker/deployer-extended.git",
+                "reference": "20e278f2178177532e9582064ee9469e098409c5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sourcebroker/deployer-extended/zipball/20e278f2178177532e9582064ee9469e098409c5",
+                "reference": "20e278f2178177532e9582064ee9469e098409c5",
+                "shasum": ""
+            },
+            "require": {
+                "deployer/deployer": "^7.0.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "SourceBroker\\DeployerExtended\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Krystian Szymukowicz",
+                    "email": "k.szymukowicz@gmail.com"
+                },
+                {
+                    "name": "Krystian Liński",
+                    "email": "krystian.linski@gmail.com"
+                }
+            ],
+            "description": "Library with some additional tasks for deployer (deployer.org).",
+            "keywords": [
+                "deployer"
+            ],
+            "support": {
+                "issues": "https://github.com/sourcebroker/deployer-extended/issues",
+                "source": "https://github.com/sourcebroker/deployer-extended/tree/24.1.1"
+            },
+            "time": "2025-05-11T17:47:16+00:00"
+        },
+        {
+            "name": "sourcebroker/deployer-extended-database",
+            "version": "20.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sourcebroker/deployer-extended-database.git",
+                "reference": "1556c1e8d6996370eacf2cc9bba8eae2ba3e87d3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sourcebroker/deployer-extended-database/zipball/1556c1e8d6996370eacf2cc9bba8eae2ba3e87d3",
+                "reference": "1556c1e8d6996370eacf2cc9bba8eae2ba3e87d3",
+                "shasum": ""
+            },
+            "require": {
+                "deployer/deployer": "^7.0.0 ",
+                "sourcebroker/deployer-instance": "^7.0.0 || dev-master",
+                "sourcebroker/deployer-loader": "^4.0.0 || ^5.0.0 || dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "SourceBroker\\DeployerExtendedDatabase\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Krystian Szymukowicz",
+                    "email": "k.szymukowicz@gmail.com"
+                }
+            ],
+            "description": "Deployer tasks to manage database synchronization between application instances.",
+            "keywords": [
+                "database",
+                "deployer",
+                "deployer.org",
+                "synchronization"
+            ],
+            "support": {
+                "issues": "https://github.com/sourcebroker/deployer-extended-database/issues",
+                "source": "https://github.com/sourcebroker/deployer-extended-database/tree/20.1.0"
+            },
+            "time": "2025-05-11T17:14:11+00:00"
+        },
+        {
+            "name": "sourcebroker/deployer-extended-media",
+            "version": "14.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sourcebroker/deployer-extended-media.git",
+                "reference": "b615723f0e5507693b45d950a7a081e91efd80ad"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sourcebroker/deployer-extended-media/zipball/b615723f0e5507693b45d950a7a081e91efd80ad",
+                "reference": "b615723f0e5507693b45d950a7a081e91efd80ad",
+                "shasum": ""
+            },
+            "require": {
+                "deployer/deployer": "^7.0.0",
+                "sourcebroker/deployer-instance": "^7.0.0 || dev-master",
+                "sourcebroker/deployer-loader": "^4.0.0 || ^5.0.0 || dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "SourceBroker\\DeployerExtendedMedia\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Krystian Szymukowicz",
+                    "email": "k.szymukowicz@gmail.com"
+                }
+            ],
+            "description": "Deployer tasks to manage media synchronization between application instances.",
+            "keywords": [
+                "deployer",
+                "media",
+                "synchronization"
+            ],
+            "support": {
+                "issues": "https://github.com/sourcebroker/deployer-extended-media/issues",
+                "source": "https://github.com/sourcebroker/deployer-extended-media/tree/14.0.0"
+            },
+            "time": "2025-04-05T13:23:14+00:00"
+        },
+        {
+            "name": "sourcebroker/deployer-extended-typo3",
+            "version": "24.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sourcebroker/deployer-extended-typo3.git",
+                "reference": "cb6fb12544b01aec79cd2d4d45bf99627d50d3d9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sourcebroker/deployer-extended-typo3/zipball/cb6fb12544b01aec79cd2d4d45bf99627d50d3d9",
+                "reference": "cb6fb12544b01aec79cd2d4d45bf99627d50d3d9",
+                "shasum": ""
+            },
+            "require": {
+                "sourcebroker/deployer-extended": "^24.0.0 || dev-master",
+                "sourcebroker/deployer-typo3-database": "^1.0.0 || dev-main",
+                "sourcebroker/deployer-typo3-deploy": "^1.0.0 || dev-main",
+                "sourcebroker/deployer-typo3-deploy-ci": "^1.0.0 || dev-main",
+                "sourcebroker/deployer-typo3-media": "^1.0.0 || dev-main"
+            },
+            "type": "library",
+            "extra": {
+                "typo3/cms": {
+                    "web-dir": ".Build/Web",
+                    "cms-package-dir": "{$vendor-dir}/typo3/cms"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Krystian Szymukowicz",
+                    "email": "k.szymukowicz@gmail.com"
+                }
+            ],
+            "description": "Customisation for `sourcebroker/deployer-typo3-*` stack",
+            "keywords": [
+                "deployer",
+                "typo3"
+            ],
+            "support": {
+                "issues": "https://github.com/sourcebroker/deployer-extended-typo3/issues",
+                "source": "https://github.com/sourcebroker/deployer-extended-typo3/tree/24.0.0"
+            },
+            "time": "2025-04-07T17:10:09+00:00"
+        },
+        {
+            "name": "sourcebroker/deployer-instance",
+            "version": "7.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sourcebroker/deployer-instance.git",
+                "reference": "873fe97b5214fa5374129de8796f6bb0018ff7e5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sourcebroker/deployer-instance/zipball/873fe97b5214fa5374129de8796f6bb0018ff7e5",
+                "reference": "873fe97b5214fa5374129de8796f6bb0018ff7e5",
+                "shasum": ""
+            },
+            "require": {
+                "deployer/deployer": "^7.0.0",
+                "symfony/dotenv": "^3.3 || ^4 || ^5 || ^6 || ^7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "SourceBroker\\DeployerInstance\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Krystian Szymukowicz",
+                    "email": "k.szymukowicz@gmail.com"
+                }
+            ],
+            "description": "Instance management for deployer.",
+            "keywords": [
+                "deployer"
+            ],
+            "support": {
+                "issues": "https://github.com/sourcebroker/deployer-instance/issues",
+                "source": "https://github.com/sourcebroker/deployer-instance/tree/7.0.0"
+            },
+            "time": "2025-04-05T13:12:20+00:00"
+        },
+        {
+            "name": "sourcebroker/deployer-loader",
+            "version": "5.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sourcebroker/deployer-loader.git",
+                "reference": "fa48696c68e97eb88a4d5bbbb301ea2e8caff9e7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sourcebroker/deployer-loader/zipball/fa48696c68e97eb88a4d5bbbb301ea2e8caff9e7",
+                "reference": "fa48696c68e97eb88a4d5bbbb301ea2e8caff9e7",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "SourceBroker\\DeployerLoader\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Krystian Szymukowicz",
+                    "email": "k.szymukowicz@gmail.com"
+                }
+            ],
+            "description": "Load deployer tasks and settings from packages, path files.",
+            "keywords": [
+                "deployer"
+            ],
+            "support": {
+                "issues": "https://github.com/sourcebroker/deployer-loader/issues",
+                "source": "https://github.com/sourcebroker/deployer-loader/tree/5.0.0"
+            },
+            "time": "2025-03-02T14:08:29+00:00"
+        },
+        {
+            "name": "sourcebroker/deployer-typo3-database",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sourcebroker/deployer-typo3-database.git",
+                "reference": "4cd9df107c53cec2a46bad98f7c60b09818a5200"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sourcebroker/deployer-typo3-database/zipball/4cd9df107c53cec2a46bad98f7c60b09818a5200",
+                "reference": "4cd9df107c53cec2a46bad98f7c60b09818a5200",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "sourcebroker/deployer-extended-database": "^20 || dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "SourceBroker\\DeployerTypo3Database\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Krystian Szymukowicz",
+                    "email": "k.szymukowicz@gmail.com"
+                }
+            ],
+            "description": "Database sync for TYPO3 with deployer-extended-database.",
+            "keywords": [
+                "deployer",
+                "typo3"
+            ],
+            "support": {
+                "issues": "https://github.com/sourcebroker/deployer-typo3-database/issues",
+                "source": "https://github.com/sourcebroker/deployer-typo3-database/tree/1.0.0"
+            },
+            "time": "2025-04-07T15:04:45+00:00"
+        },
+        {
+            "name": "sourcebroker/deployer-typo3-deploy",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sourcebroker/deployer-typo3-deploy.git",
+                "reference": "87fe0275de0802e39debae47e00ab1041556a27d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sourcebroker/deployer-typo3-deploy/zipball/87fe0275de0802e39debae47e00ab1041556a27d",
+                "reference": "87fe0275de0802e39debae47e00ab1041556a27d",
+                "shasum": ""
+            },
+            "require": {
+                "deployer/deployer": "~7.0 || dev-master",
+                "sourcebroker/deployer-loader": "^5 || dev-master"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Krystian Szymukowicz",
+                    "email": "k.szymukowicz@gmail.com"
+                }
+            ],
+            "description": "Deploy for TYPO3 with Deployer",
+            "keywords": [
+                "deployer",
+                "typo3"
+            ],
+            "support": {
+                "issues": "https://github.com/sourcebroker/deployer-typo3-deploy/issues",
+                "source": "https://github.com/sourcebroker/deployer-typo3-deploy/tree/1.0.0"
+            },
+            "time": "2025-04-07T14:42:14+00:00"
+        },
+        {
+            "name": "sourcebroker/deployer-typo3-deploy-ci",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sourcebroker/deployer-typo3-deploy-ci.git",
+                "reference": "d91348a2388fb81eca6beeff9462d2d41772ad33"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sourcebroker/deployer-typo3-deploy-ci/zipball/d91348a2388fb81eca6beeff9462d2d41772ad33",
+                "reference": "d91348a2388fb81eca6beeff9462d2d41772ad33",
+                "shasum": ""
+            },
+            "require": {
+                "deployer/deployer": "~7.0 || dev-master",
+                "sourcebroker/deployer-loader": "^5 || dev-master"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Krystian Szymukowicz",
+                    "email": "k.szymukowicz@gmail.com"
+                }
+            ],
+            "description": "Deploy for TYPO3 with Deployer at CI level",
+            "keywords": [
+                "ci",
+                "deployer",
+                "gitlab",
+                "typo3"
+            ],
+            "support": {
+                "issues": "https://github.com/sourcebroker/deployer-typo3-deploy-ci/issues",
+                "source": "https://github.com/sourcebroker/deployer-typo3-deploy-ci/tree/1.0.2"
+            },
+            "time": "2025-05-26T09:50:15+00:00"
+        },
+        {
+            "name": "sourcebroker/deployer-typo3-media",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sourcebroker/deployer-typo3-media.git",
+                "reference": "ca135a157ddb10a79c2a7a30b6aaf56a6d62e10c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sourcebroker/deployer-typo3-media/zipball/ca135a157ddb10a79c2a7a30b6aaf56a6d62e10c",
+                "reference": "ca135a157ddb10a79c2a7a30b6aaf56a6d62e10c",
+                "shasum": ""
+            },
+            "require": {
+                "sourcebroker/deployer-extended-media": "^14 || dev-master"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Krystian Szymukowicz",
+                    "email": "k.szymukowicz@gmail.com"
+                }
+            ],
+            "description": "Media sync for TYPO3 with deployer-extended-media.",
+            "keywords": [
+                "deployer",
+                "typo3"
+            ],
+            "support": {
+                "issues": "https://github.com/sourcebroker/deployer-typo3-media/issues",
+                "source": "https://github.com/sourcebroker/deployer-typo3-media/tree/1.0.0"
+            },
+            "time": "2025-04-07T15:11:04+00:00"
+        },
+        {
             "name": "symfony/cache",
             "version": "v7.3.0",
             "source": {
@@ -2868,6 +3327,80 @@
                 }
             ],
             "time": "2025-03-26T11:30:13+00:00"
+        },
+        {
+            "name": "symfony/dotenv",
+            "version": "v7.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/dotenv.git",
+                "reference": "28347a897771d0c28e99b75166dd2689099f3045"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/dotenv/zipball/28347a897771d0c28e99b75166dd2689099f3045",
+                "reference": "28347a897771d0c28e99b75166dd2689099f3045",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.2"
+            },
+            "conflict": {
+                "symfony/console": "<6.4",
+                "symfony/process": "<6.4"
+            },
+            "require-dev": {
+                "symfony/console": "^6.4|^7.0",
+                "symfony/process": "^6.4|^7.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Dotenv\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Registers environment variables from a .env file",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "dotenv",
+                "env",
+                "environment"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/dotenv/tree/v7.3.0"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2024-11-27T11:18:42+00:00"
         },
         {
             "name": "symfony/event-dispatcher",
@@ -6946,9 +7479,7 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "my-vendor/my-site-package": 20
-    },
+    "stability-flags": {},
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {},

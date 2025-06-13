@@ -9,7 +9,7 @@
 			"typo3/cms-composer-installers": true
 		},
 		"platform": {
-			"php": "8.2.0"
+			"php": "8.4.0"
 		},
 		"sort-packages": true
 	},
@@ -21,7 +21,6 @@
 	],
 	"require": {
 		"friendsoftypo3/content-blocks": "^1.0",
-		"my-vendor/my-site-package": "@dev",
 		"typo3/cms-backend": "^13.4",
 		"typo3/cms-belog": "^13.4",
 		"typo3/cms-beuser": "^13.4",
@@ -47,5 +46,8 @@
 		"typo3/cms-tstemplate": "^13.4",
 		"typo3/cms-viewpage": "^13.4",
 		"typo3/cms-webhooks": "^13.4"
+	},
+	"require-dev": {
+		"sourcebroker/deployer-extended-typo3": "^24.0"
 	}
 }

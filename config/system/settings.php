@@ -2,7 +2,6 @@
 return [
     'BE' => [
         'debug' => true,
-        'installToolPassword' => '$argon2i$v=19$m=65536,t=16,p=1$MGYzallDakt5WFd4SFpETA$+qV7r8xrV061skKc7xDz83C3btgpyiRQVarvHO3kcmE',
         'passwordHashing' => [
             'className' => 'TYPO3\\CMS\\Core\\Crypto\\PasswordHashing\\Argon2iPasswordHash',
             'options' => [],
@@ -11,33 +10,9 @@ return [
     'DB' => [
         'Connections' => [
             'Default' => [
-                'charset' => 'utf8mb4',
-                'dbname' => 'db',
-                'defaultTableOptions' => [
-                    'charset' => 'utf8mb4',
-                    'collation' => 'utf8mb4_unicode_ci',
-                ],
+                'charset' => 'utf8',
                 'driver' => 'mysqli',
-                'host' => 'db',
-                'password' => 'db',
-                'port' => 3306,
-                'user' => 'db',
             ],
-        ],
-    ],
-    'EXTENSIONS' => [
-        'backend' => [
-            'backendFavicon' => '',
-            'backendLogo' => '',
-            'loginBackgroundImage' => '',
-            'loginFootnote' => '',
-            'loginHighlightColor' => '',
-            'loginLogo' => '',
-            'loginLogoAlt' => '',
-        ],
-        'extensionmanager' => [
-            'automaticInstallation' => '1',
-            'offlineMode' => '0',
         ],
     ],
     'FE' => [
@@ -103,14 +78,13 @@ return [
         ],
         'devIPmask' => '*',
         'displayErrors' => 1,
-        'encryptionKey' => '99bbc58adc40d9abb869e63c803c4757ff3e4d3831ece89c49d8ef8a0c81a6e4a3ca34597c8d1496e243cd74c7c28d26',
+        'encryptionKey' => 'd4fd48167b103e43d3ecbeb64fe40ded59f782a36e99fff5293ae6df11b747f1ddf247acd907348e345ba13405504d9a',
         'exceptionalErrors' => 12290,
         'features' => [
+            'extbase.consistentDateTimeHandling' => true,
             'frontend.cache.autoTagging' => true,
+            'security.system.enforceAllowedFileExtensions' => true,
         ],
-        'sitename' => '"Automated Setup"',
-        'systemMaintainers' => [
-            1,
-        ],
+        'sitename' => 'New TYPO3 site',
     ],
 ];
