@@ -7,7 +7,7 @@ require 'recipe/typo3.php';
 
 // Config
 
-//set('repository', 'https://github.com/TYPO3-Documentation/site-introduction.git');
+set('repository', 'git@github.com:Rathch/site-introduction.git');
 
 add('shared_files', []);
 add('shared_dirs', []);
