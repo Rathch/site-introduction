@@ -29,4 +29,4 @@ task('typo3:database:update', function () {
 });
 
 // Run database update after successful deployment
-after('deploy:dbupdate', 'typo3:database:update');
+after('deploy:symlink', 'typo3:database:update');
