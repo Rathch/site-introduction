@@ -22,3 +22,11 @@ host('ssh.vehlage.project.host')
 // Hooks
 
 after('deploy:failed', 'deploy:unlock');
+
+// Add task to run TYPO3 database update
+task('typo3:database:update', function () {
+    run('cd {{release_path}} && vendor/bin/typo3 database:updateschema safe');
+});
+
+// Run database update after successful deployment
+after('deploy:dbupdate', 'typo3:database:update');
