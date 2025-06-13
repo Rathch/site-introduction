@@ -34,4 +34,5 @@ task('typo3:symlink-env', function () {
 });
 
 // Run database update after successful deployment
+before('typo3:database:update', 'typo3:symlink-env');
 before('deploy:symlink', 'typo3:database:update');
