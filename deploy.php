@@ -4,14 +4,14 @@ namespace Deployer;
 require 'recipe/typo3.php';
 
 
-new \SourceBroker\DeployerLoader\Load([
-    ['get' => 'sourcebroker/deployer-typo3-media'],
-    ['get' => 'sourcebroker/deployer-typo3-database'],
-    ['get' => 'sourcebroker/deployer-typo3-deploy'],
-    ['get' => 'sourcebroker/deployer-extended-typo3'],
-]);
 
+// Config
 
+//set('repository', 'https://github.com/TYPO3-Documentation/site-introduction.git');
+
+add('shared_files', []);
+add('shared_dirs', []);
+add('writable_dirs', []);
 
 // Hosts
 
