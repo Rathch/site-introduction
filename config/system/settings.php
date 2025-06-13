@@ -15,6 +15,21 @@ return [
             ],
         ],
     ],
+    'EXTENSIONS' => [
+        'backend' => [
+            'backendFavicon' => '',
+            'backendLogo' => '',
+            'loginBackgroundImage' => '',
+            'loginFootnote' => '',
+            'loginHighlightColor' => '',
+            'loginLogo' => '',
+            'loginLogoAlt' => '',
+        ],
+        'extensionmanager' => [
+            'automaticInstallation' => '1',
+            'offlineMode' => '0',
+        ],
+    ],
     'FE' => [
         'cacheHash' => [
             'enforceValidation' => true,

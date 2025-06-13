@@ -28,5 +28,10 @@ task('typo3:database:update', function () {
     run('cd {{release_path}} && vendor/bin/typo3 database:updateschema safe');
 });
 
+// Add task to symlink environment-specific configuration
+task('typo3:symlink-env', function () {
+    run('cd {{release_path}} && ln -sf ../../.env .env');
+});
+
 // Run database update after successful deployment
-after('deploy:symlink', 'typo3:database:update');
+before('deploy:symlink', 'typo3:database:update');
