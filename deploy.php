@@ -16,7 +16,7 @@ add('writable_dirs', []);
 // Hosts
 
 host('ssh.vehlage.project.host')
-    ->set('remote_user', 'ssh-w5i8rk\@a-qfw3hn')
+    ->set('remote_user', 'ssh-w5i8rk@a-qfw3hn')
     ->set('deploy_path', '/home/p-jui7qu/html/typo3-ucxeb');
 
 // Hooks
